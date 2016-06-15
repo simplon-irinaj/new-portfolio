@@ -1,0 +1,384 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$font-commun: 3em;
+
+body {
+    font-family: Amatic SC;
+    letter-spacing: 0.1em;
+    background-color: ivory;
+    position: relative;
+}
+
+
+.menu {
+    position: fixed;
+    width: 100%;
+    font-size: 2em;
+    top: 2vh;
+    z-index: 1;
+}
+
+ul {
+  display: flex;
+  text-decoration: none;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+li>h2:hover {
+    padding: 0.5vw;
+    border: dashed 1px coral;
+    color: coral;
+    margin: -0.5vw;
+    cursor: pointer;
+}
+
+li>h2>a {
+  text-decoration: none;
+}
+
+li>h2>a:hover {
+  color: coral;
+}
+
+.logos {
+    width: 2vw;
+    height: auto;
+}
+
+#containerAccueil {
+    font-size: $font-commun;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.titles {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.titles>h1 {
+    color: coral;
+}
+
+.borderTitles {
+    position: absolute;
+    border: dashed 1px coral;
+    z-index: 1;
+    animation-name: apparitionBorder;
+    animation-delay: 6s;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes apparitionBorder {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.design {
+    width: 12vw;
+    height: 10vh;
+    left: 19vw;
+}
+
+.design:hover {
+    border: dashed 2px coral;
+    cursor: pointer;
+}
+
+.dev {
+    width: 25vw;
+    height: 10vh;
+}
+
+.dev:hover {
+    @extend .design:hover;
+}
+
+.animTitles {
+    padding: 2vh;
+    width: 23vw;
+    height: auto;
+    animation-name: slide;
+    animation-delay: 6s;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slide {
+    0% {
+        margin-right: 10vw;
+        visibility: visible;
+        opacity: 0.1;
+    }
+    25% {
+         margin-right: 8vw;
+        visibility: visible;
+        opacity: 0.3;
+    }
+
+    50% {
+        margin-right: 5vw;
+        visibility: visible;
+        opacity: 0.5;
+    }
+    75% {
+         margin-right: 3vw;
+        visibility: visible;
+        opacity: 0.8;
+    }
+    100% {
+        margin-right: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.portrait {
+    @extend .titles;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.textes {
+    visibility: hidden;
+    width: 30vw;
+    height: 30vh;
+    font-size: 0.5em;
+    text-align: left;
+}
+
+#texteDesign {
+  margin-right: 0;
+  margin-top: 12vh;
+}
+
+#texteDev {
+  margin-left: 0;
+  margin-top: 11vh;
+}
+
+.color {
+  color: orangered;
+}
+
+#portrait {
+  margin-bottom: 10vh;
+}
+
+.presentation {
+    text-align: center;
+    position: relative;
+    bottom: 10vh;
+}
+
+.invisible {
+    position: absolute;
+    right: 45.4vw;
+    top: 16.6vh;
+    display: none;
+}
+
+.animBj {
+    font-size: 1.5em;
+    animation-duration: 2s;
+    animation-name: apparition;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+
+.animName {
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: apparition;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+
+.name {
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-name: visible;
+    animation-timing-function: linear;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+
+.animP {
+     animation-delay: 4s;
+    animation-duration: 1s;
+    animation-name: apparition;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+
+
+@keyframes apparition {
+    0% {
+        opacity: 0;
+        color: coral;
+    }
+    50% {
+        opacity: 0.5;
+        color: coral;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes visible {
+    0% {
+        opacity: 0;
+        bottom: -8vh;
+        color: coral;
+    }
+    50% {
+        opacity: 0.5;
+        bottom: 0;
+        color: coral;
+    }
+    100% {
+        opacity: 1;
+        bottom: 10vh;
+    }
+}
+
+// ------------------------2e ECRAN---------------------- //
+
+.projets {
+  background-color: lightblue;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  clear: both;
+  font-size: 1.5em;
+}
+
+.site>h1> a {
+  text-decoration: none;
+  color: orangered;
+}
+
+.site {
+  font-size: 1.2em;
+}
+
+#containerSlide {
+  position: relative;
+}
+
+.imagesProjets {
+  width: 50%;
+  height: 40%;
+  display: none;
+  padding: 2vw;
+  margin-top: 15vh;
+  float: left;
+}
+
+.imagesProjets:hover {
+  cursor: pointer;
+}
+
+.infos {
+  width: 40%;
+  height: 90%;
+  display: none;
+  float: right;
+  margin-right: 2vw;
+  margin-top: 19vh;
+}
+
+
+.site {
+  clear: left;
+  width: 50%;
+  height: 45%;
+  margin-bottom: 18vh;
+  margin-left: 2vw;
+}
+
+
+.visible {
+  display: block;
+}
+
+.navigation {
+  position: absolute;
+  display: flex;
+  flex-flow: row;
+  height: 2vw;
+  z-index: 1;
+  bottom: 40vh;
+}
+
+.fleches {
+  color: coral;
+  width: 1vw;
+  height: 1vw;
+  border: dashed 1px coral;
+  border-radius: 100%;
+  padding: 1vw;
+  text-align: center;
+}
+
+.left {
+  margin-left: 6vw;
+}
+
+.right {
+  margin-left: 81vw;
+}
+
+.fleches:hover {
+  background-color: coral;
+  color: #FFF;
+  cursor: pointer;
+}
+
+
+// -------------------------3eECRAN-------------------------------------------//
+
+
+footer {
+  width: 100%;
+  height: 80vh;
+  background-color: coral;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+footer>h2>a {
+  text-decoration: none;
+  color: lightblue;
+}
