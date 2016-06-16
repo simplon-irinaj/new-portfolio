@@ -47,6 +47,10 @@ li>h2>a:hover {
   color: coral;
 }
 
+li>h2>a:visited{
+  color:inherit;
+}
+
 .logos {
     width: 2vw;
     height: auto;
@@ -169,7 +173,7 @@ li>h2>a:hover {
     width: 30vw;
     height: 30vh;
     font-size: 0.5em;
-    text-align: left;
+    text-align: center;
 }
 
 #texteDesign {

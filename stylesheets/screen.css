@@ -113,12 +113,17 @@ li > h2 > a:hover {
 }
 
 /* line 50, ../sass/screen.scss */
+li > h2 > a:visited {
+  color: inherit;
+}
+
+/* line 54, ../sass/screen.scss */
 .logos {
   width: 2vw;
   height: auto;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 #containerAccueil {
   font-size: 3em;
   display: flex;
@@ -127,7 +132,7 @@ li > h2 > a:hover {
   margin-top: 20vh;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .titles, .portrait {
   display: flex;
   flex-flow: row nowrap;
@@ -136,12 +141,12 @@ li > h2 > a:hover {
   text-align: center;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 .titles > h1, .portrait > h1 {
   color: coral;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .borderTitles {
   position: absolute;
   border: dashed 1px coral;
@@ -165,26 +170,26 @@ li > h2 > a:hover {
     opacity: 1;
   }
 }
-/* line 99, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .design {
   width: 12vw;
   height: 10vh;
   left: 19vw;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .design:hover, .dev:hover {
   border: dashed 2px coral;
   cursor: pointer;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .dev {
   width: 25vw;
   height: 10vh;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .animTitles {
   padding: 2vh;
   width: 23vw;
@@ -224,51 +229,51 @@ li > h2 > a:hover {
     opacity: 1;
   }
 }
-/* line 161, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .portrait {
   margin-top: 2vh;
   width: 100%;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .textes {
   visibility: hidden;
   width: 30vw;
   height: 30vh;
   font-size: 0.5em;
-  text-align: left;
+  text-align: center;
 }
 
-/* line 175, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 #texteDesign {
   margin-right: 0;
   margin-top: 12vh;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 #texteDev {
   margin-left: 0;
   margin-top: 11vh;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .color {
   color: orangered;
 }
 
-/* line 189, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #portrait {
   margin-bottom: 10vh;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .presentation {
   text-align: center;
   position: relative;
   bottom: 10vh;
 }
 
-/* line 199, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .invisible {
   position: absolute;
   right: 45.4vw;
@@ -276,7 +281,7 @@ li > h2 > a:hover {
   display: none;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .animBj {
   font-size: 1.5em;
   animation-duration: 2s;
@@ -285,7 +290,7 @@ li > h2 > a:hover {
   opacity: 0;
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .animName {
   animation-delay: 1s;
   animation-duration: 1s;
@@ -294,7 +299,7 @@ li > h2 > a:hover {
   opacity: 0;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .name {
   animation-delay: 2s;
   animation-duration: 1s;
@@ -305,7 +310,7 @@ li > h2 > a:hover {
   position: absolute;
 }
 
-/* line 232, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .animP {
   animation-delay: 4s;
   animation-duration: 1s;
@@ -343,7 +348,7 @@ li > h2 > a:hover {
     bottom: 10vh;
   }
 }
-/* line 274, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .projets {
   background-color: lightblue;
   width: 80%;
@@ -353,23 +358,23 @@ li > h2 > a:hover {
   font-size: 1.5em;
 }
 
-/* line 283, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .site > h1 > a {
   text-decoration: none;
   color: orangered;
 }
 
-/* line 288, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 .site {
   font-size: 1.2em;
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #containerSlide {
   position: relative;
 }
 
-/* line 296, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 .imagesProjets {
   width: 50%;
   height: 40%;
@@ -379,12 +384,12 @@ li > h2 > a:hover {
   float: left;
 }
 
-/* line 305, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .imagesProjets:hover {
   cursor: pointer;
 }
 
-/* line 309, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 .infos {
   width: 40%;
   height: 90%;
@@ -394,7 +399,7 @@ li > h2 > a:hover {
   margin-top: 19vh;
 }
 
-/* line 319, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 .site {
   clear: left;
   width: 50%;
@@ -403,12 +408,12 @@ li > h2 > a:hover {
   margin-left: 2vw;
 }
 
-/* line 328, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 .visible {
   display: block;
 }
 
-/* line 332, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .navigation {
   position: absolute;
   display: flex;
@@ -418,7 +423,7 @@ li > h2 > a:hover {
   bottom: 40vh;
 }
 
-/* line 341, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 .fleches {
   color: coral;
   width: 1vw;
@@ -429,24 +434,24 @@ li > h2 > a:hover {
   text-align: center;
 }
 
-/* line 351, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 .left {
   margin-left: 6vw;
 }
 
-/* line 355, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 .right {
   margin-left: 81vw;
 }
 
-/* line 359, ../sass/screen.scss */
+/* line 363, ../sass/screen.scss */
 .fleches:hover {
   background-color: coral;
   color: #FFF;
   cursor: pointer;
 }
 
-/* line 369, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 footer {
   width: 100%;
   height: 80vh;
@@ -459,7 +464,7 @@ footer {
   line-height: 1.2em;
 }
 
-/* line 381, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 footer > h2 > a {
   text-decoration: none;
   color: lightblue;
