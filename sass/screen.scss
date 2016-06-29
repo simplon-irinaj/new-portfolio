@@ -14,7 +14,7 @@ body {
     position: relative;
 }
 
-
+// ----------------------------------$NAV------------------------------------//
 .menu {
     position: fixed;
     width: 100%;
@@ -43,18 +43,21 @@ li>h2>a {
   text-decoration: none;
 }
 
-li>h2>a:hover {
-  color: coral;
+li>h2>a:visited{
+  color: initial;
 }
 
-li>h2>a:visited{
-  color:inherit;
+li>h2>a:hover {
+  color: coral;
 }
 
 .logos {
     width: 2vw;
     height: auto;
 }
+
+
+// ----------------------------------$HEADER------------------------------------//
 
 #containerAccueil {
     font-size: $font-commun;
@@ -100,24 +103,24 @@ li>h2>a:visited{
   }
 }
 
-.design {
+.borderDesign {
     width: 12vw;
     height: 10vh;
     left: 19vw;
 }
 
-.design:hover {
+.borderDesign:hover {
     border: dashed 2px coral;
     cursor: pointer;
 }
 
-.dev {
+.borderDev {
     width: 25vw;
     height: 10vh;
 }
 
-.dev:hover {
-    @extend .design:hover;
+.borderDev:hover {
+    @extend .borderDesign:hover;
 }
 
 .animTitles {
@@ -289,10 +292,6 @@ li>h2>a:visited{
   color: orangered;
 }
 
-.site {
-  font-size: 1.2em;
-}
-
 #containerSlide {
   position: relative;
 }
@@ -321,6 +320,7 @@ li>h2>a:visited{
 
 
 .site {
+  font-size: 1.2em;
   clear: left;
   width: 50%;
   height: 45%;
@@ -385,4 +385,133 @@ footer {
 footer>h2>a {
   text-decoration: none;
   color: lightblue;
+}
+
+
+// ---------------------------$RESPONSIVE--------------------------------------//
+
+
+
+@media screen and (max-width:600px) {
+
+    .menu {
+    font-size: 2.4em;
+}
+
+ul {
+  flex-flow: row wrap;
+}
+
+.menu li {
+    padding-left: 8vw;
+}
+
+.logos {
+    width: 8vw;
+    height: auto;
+    padding-top: 2vh;
+}
+
+.borderTitles {
+    display: none;
+}
+
+.titles {
+    position: relative;
+    width: 100%;
+}
+
+.animTitles {
+    font-size: 1em;
+    position: absolute;
+}
+
+.animTitleDesign {
+    right: 40vw;
+    animation-name: slide;
+    animation-delay: 6s;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    z-index: 3;
+}
+
+.animTitleEt {
+    right: 35vw;
+    animation-name: slide;
+     animation-delay: 7s;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    z-index: 2;
+}
+
+.animTitleDev {
+    width: 50vw;
+    right: 20vw;
+    animation-name: slide;
+    animation-delay: 8s;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    z-index: 1;
+}
+
+@keyframes slide {
+    0% {
+        visibility: visible;
+        opacity: 0.1;
+    }
+    25% {
+        visibility: visible;
+        opacity: 0.3;
+    }
+
+    50% {
+        visibility: visible;
+        opacity: 0.5;
+    }
+    75% {
+        visibility: visible;
+        opacity: 0.8;
+    }
+    100% {
+        visibility: visible;
+        display: none;
+    }
+}
+
+.portrait {
+    margin-top: 15vh;
+}
+
+.site h1 {
+    display: none;
+}
+
+.projets {
+  width: 100%;
+  font-size: 1.8em;
+}
+
+.infos {
+  clear: left;
+  width: 90%;
+  margin-top: 2vh;
+}
+
+.imagesProjets {
+  width: 100%;
+  height: 30%;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 18vh;
+}
+
+.navigation {
+    display: none;
+}
+
+footer {
+  text-align: center;
+}
+
+
 }
