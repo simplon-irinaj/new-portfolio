@@ -41,10 +41,7 @@ li>h2:hover {
 
 li>h2>a {
   text-decoration: none;
-}
-
-li>h2>a:visited{
-  color: initial;
+  color: black;
 }
 
 li>h2>a:hover {
@@ -79,50 +76,6 @@ li>h2>a:hover {
     color: coral;
 }
 
-.borderTitles {
-    position: absolute;
-    border: dashed 1px coral;
-    z-index: 1;
-    animation-name: apparitionBorder;
-    animation-delay: 6s;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-@keyframes apparitionBorder {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.borderDesign {
-    width: 12vw;
-    height: 10vh;
-    left: 19vw;
-}
-
-.borderDesign:hover {
-    border: dashed 2px coral;
-    cursor: pointer;
-}
-
-.borderDev {
-    width: 25vw;
-    height: 10vh;
-}
-
-.borderDev:hover {
-    @extend .borderDesign:hover;
-}
-
 .animTitles {
     padding: 2vh;
     width: 23vw;
@@ -133,6 +86,14 @@ li>h2>a:hover {
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+.animTitleDesign, .animTitleDev {
+    border: dashed 1px coral;
+}
+
+.animTitleDesign:hover, .animTitleDev:hover {
+    border: dashed 2px coral;
 }
 
 @keyframes slide {
@@ -433,6 +394,7 @@ ul {
     animation-duration: 0.8s;
     animation-timing-function: linear;
     z-index: 3;
+    border: none;
 }
 
 .animTitleEt {
@@ -452,6 +414,7 @@ ul {
     animation-duration: 0.8s;
     animation-timing-function: linear;
     z-index: 1;
+    border: none;
 }
 
 @keyframes slide {

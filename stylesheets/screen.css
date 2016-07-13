@@ -105,25 +105,21 @@ li > h2:hover {
 /* line 42, ../sass/screen.scss */
 li > h2 > a {
   text-decoration: none;
+  color: black;
 }
 
-/* line 46, ../sass/screen.scss */
-li > h2 > a:visited {
-  color: initial;
-}
-
-/* line 50, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 li > h2 > a:hover {
   color: coral;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 .logos {
   width: 2vw;
   height: auto;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 #containerAccueil {
   font-size: 3em;
   display: flex;
@@ -132,7 +128,7 @@ li > h2 > a:hover {
   margin-top: 20vh;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .titles, .portrait {
   display: flex;
   flex-flow: row nowrap;
@@ -141,55 +137,12 @@ li > h2 > a:hover {
   text-align: center;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 .titles > h1, .portrait > h1 {
   color: coral;
 }
 
-/* line 82, ../sass/screen.scss */
-.borderTitles {
-  position: absolute;
-  border: dashed 1px coral;
-  z-index: 1;
-  animation-name: apparitionBorder;
-  animation-delay: 6s;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@keyframes apparitionBorder {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/* line 106, ../sass/screen.scss */
-.borderDesign {
-  width: 12vw;
-  height: 10vh;
-  left: 19vw;
-}
-
-/* line 112, ../sass/screen.scss */
-.borderDesign:hover, .borderDev:hover {
-  border: dashed 2px coral;
-  cursor: pointer;
-}
-
-/* line 117, ../sass/screen.scss */
-.borderDev {
-  width: 25vw;
-  height: 10vh;
-}
-
-/* line 126, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .animTitles {
   padding: 2vh;
   width: 23vw;
@@ -200,6 +153,16 @@ li > h2 > a:hover {
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   opacity: 0;
+}
+
+/* line 91, ../sass/screen.scss */
+.animTitleDesign, .animTitleDev {
+  border: dashed 1px coral;
+}
+
+/* line 95, ../sass/screen.scss */
+.animTitleDesign:hover, .animTitleDev:hover {
+  border: dashed 2px coral;
 }
 
 @keyframes slide {
@@ -229,13 +192,13 @@ li > h2 > a:hover {
     opacity: 1;
   }
 }
-/* line 168, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .portrait {
   margin-top: 2vh;
   width: 100%;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .textes {
   visibility: hidden;
   width: 30vw;
@@ -244,36 +207,36 @@ li > h2 > a:hover {
   text-align: center;
 }
 
-/* line 182, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 #texteDesign {
   margin-right: 0;
   margin-top: 12vh;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 #texteDev {
   margin-left: 0;
   margin-top: 11vh;
 }
 
-/* line 192, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .color {
   color: orangered;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 #portrait {
   margin-bottom: 10vh;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .presentation {
   text-align: center;
   position: relative;
   bottom: 10vh;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .invisible {
   position: absolute;
   right: 45.4vw;
@@ -281,7 +244,7 @@ li > h2 > a:hover {
   display: none;
 }
 
-/* line 213, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 .animBj {
   font-size: 1.5em;
   animation-duration: 2s;
@@ -290,7 +253,7 @@ li > h2 > a:hover {
   opacity: 0;
 }
 
-/* line 221, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .animName {
   animation-delay: 1s;
   animation-duration: 1s;
@@ -299,7 +262,7 @@ li > h2 > a:hover {
   opacity: 0;
 }
 
-/* line 229, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .name {
   animation-delay: 2s;
   animation-duration: 1s;
@@ -310,7 +273,7 @@ li > h2 > a:hover {
   position: absolute;
 }
 
-/* line 239, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .animP {
   animation-delay: 4s;
   animation-duration: 1s;
@@ -348,7 +311,7 @@ li > h2 > a:hover {
     bottom: 10vh;
   }
 }
-/* line 281, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .projets {
   background-color: lightblue;
   width: 80%;
@@ -358,18 +321,18 @@ li > h2 > a:hover {
   font-size: 1.5em;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .site > h1 > a {
   text-decoration: none;
   color: orangered;
 }
 
-/* line 295, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 #containerSlide {
   position: relative;
 }
 
-/* line 299, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .imagesProjets {
   width: 50%;
   height: 40%;
@@ -379,12 +342,12 @@ li > h2 > a:hover {
   float: left;
 }
 
-/* line 308, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .imagesProjets:hover {
   cursor: pointer;
 }
 
-/* line 312, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .infos {
   width: 40%;
   height: 90%;
@@ -394,7 +357,7 @@ li > h2 > a:hover {
   margin-top: 19vh;
 }
 
-/* line 322, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .site {
   font-size: 1.2em;
   clear: left;
@@ -404,12 +367,12 @@ li > h2 > a:hover {
   margin-left: 2vw;
 }
 
-/* line 332, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .visible {
   display: block;
 }
 
-/* line 336, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 .navigation {
   position: absolute;
   display: flex;
@@ -419,7 +382,7 @@ li > h2 > a:hover {
   bottom: 40vh;
 }
 
-/* line 345, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 .fleches {
   color: coral;
   width: 1vw;
@@ -430,24 +393,24 @@ li > h2 > a:hover {
   text-align: center;
 }
 
-/* line 355, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 .left {
   margin-left: 6vw;
 }
 
-/* line 359, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 .right {
   margin-left: 81vw;
 }
 
-/* line 363, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 .fleches:hover {
   background-color: coral;
   color: #FFF;
   cursor: pointer;
 }
 
-/* line 373, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 footer {
   width: 100%;
   height: 80vh;
@@ -460,53 +423,53 @@ footer {
   line-height: 1.2em;
 }
 
-/* line 385, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 footer > h2 > a {
   text-decoration: none;
   color: lightblue;
 }
 
 @media screen and (max-width: 600px) {
-  /* line 397, ../sass/screen.scss */
+  /* line 358, ../sass/screen.scss */
   .menu {
     font-size: 2.4em;
   }
 
-  /* line 401, ../sass/screen.scss */
+  /* line 362, ../sass/screen.scss */
   ul {
     flex-flow: row wrap;
   }
 
-  /* line 405, ../sass/screen.scss */
+  /* line 366, ../sass/screen.scss */
   .menu li {
     padding-left: 8vw;
   }
 
-  /* line 409, ../sass/screen.scss */
+  /* line 370, ../sass/screen.scss */
   .logos {
     width: 8vw;
     height: auto;
     padding-top: 2vh;
   }
 
-  /* line 415, ../sass/screen.scss */
+  /* line 376, ../sass/screen.scss */
   .borderTitles {
     display: none;
   }
 
-  /* line 419, ../sass/screen.scss */
+  /* line 380, ../sass/screen.scss */
   .titles, .portrait {
     position: relative;
     width: 100%;
   }
 
-  /* line 424, ../sass/screen.scss */
+  /* line 385, ../sass/screen.scss */
   .animTitles {
     font-size: 1em;
     position: absolute;
   }
 
-  /* line 429, ../sass/screen.scss */
+  /* line 390, ../sass/screen.scss */
   .animTitleDesign {
     right: 40vw;
     animation-name: slide;
@@ -514,9 +477,10 @@ footer > h2 > a {
     animation-duration: 0.8s;
     animation-timing-function: linear;
     z-index: 3;
+    border: none;
   }
 
-  /* line 438, ../sass/screen.scss */
+  /* line 400, ../sass/screen.scss */
   .animTitleEt {
     right: 35vw;
     animation-name: slide;
@@ -526,7 +490,7 @@ footer > h2 > a {
     z-index: 2;
   }
 
-  /* line 447, ../sass/screen.scss */
+  /* line 409, ../sass/screen.scss */
   .animTitleDev {
     width: 50vw;
     right: 20vw;
@@ -535,6 +499,7 @@ footer > h2 > a {
     animation-duration: 0.8s;
     animation-timing-function: linear;
     z-index: 1;
+    border: none;
   }
 
   @keyframes slide {
@@ -559,30 +524,30 @@ footer > h2 > a {
       display: none;
     }
   }
-  /* line 481, ../sass/screen.scss */
+  /* line 444, ../sass/screen.scss */
   .portrait {
     margin-top: 15vh;
   }
 
-  /* line 485, ../sass/screen.scss */
+  /* line 448, ../sass/screen.scss */
   .site h1 {
     display: none;
   }
 
-  /* line 489, ../sass/screen.scss */
+  /* line 452, ../sass/screen.scss */
   .projets {
     width: 100%;
     font-size: 1.8em;
   }
 
-  /* line 494, ../sass/screen.scss */
+  /* line 457, ../sass/screen.scss */
   .infos {
     clear: left;
     width: 90%;
     margin-top: 2vh;
   }
 
-  /* line 500, ../sass/screen.scss */
+  /* line 463, ../sass/screen.scss */
   .imagesProjets {
     width: 100%;
     height: 30%;
@@ -591,12 +556,12 @@ footer > h2 > a {
     padding-top: 18vh;
   }
 
-  /* line 508, ../sass/screen.scss */
+  /* line 471, ../sass/screen.scss */
   .navigation {
     display: none;
   }
 
-  /* line 512, ../sass/screen.scss */
+  /* line 475, ../sass/screen.scss */
   footer {
     text-align: center;
   }
